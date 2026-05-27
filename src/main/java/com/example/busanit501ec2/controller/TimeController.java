@@ -1,4 +1,4 @@
-package controller;
+package com.example.busanit501ec2.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -11,6 +11,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Map;
+
 
 @RestController
 @RequestMapping("/api/time")
@@ -34,7 +35,7 @@ public class TimeController {
 
             now = resultSet.getString(1);
 
-            log.info("NOW: " + now);
+            log.info("ç: " + now);
 
         }catch(Exception e){
             e.printStackTrace();
